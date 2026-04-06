@@ -920,17 +920,18 @@ a.light-text:focus {
   }
 }
 @media (min-width: 767px) {
+  /* Replace each background-image URL with your own research interest images */
   .about-img-1 {
-    background-image: url(../img/RobertaDeVito_MachineLearning.jpg);
+    background-image: url(../img/your-interest-1.jpg);
   }
   .about-img-2 {
-    background-image: url(../img/RobertaDeVito_Bayesian_Analysis.jpg);
+    background-image: url(../img/your-interest-2.jpg);
   }
   .about-img-3 {
-    background-image: url(../img/RobertaDeVito_High_Dimensional_Data.jpg);
+    background-image: url(../img/your-interest-3.jpg);
   }
   .about-img-4 {
-    background-image: url(../img/RobertaDeVito_Latent_Variable_Models.jpg);
+    background-image: url(../img/your-interest-4.jpg);
   }
 }
 .blog-1 .blog-col {
