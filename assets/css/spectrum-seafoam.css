@@ -326,7 +326,7 @@ a.light-text:focus {
     right: 0;
     bottom: 0;
     height: 3px;
-    background: #afd0ba;
+    background: #4b2e83;
     content: '';
     opacity: 0;
     -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -1390,7 +1390,7 @@ a.light-text:focus {
   color: #3e444d !important;
 }
 .bg-primary {
-  background: #afd0ba !important;
+  background: #4b2e83 !important;
   color: #f4f5f7 !important;
 }
 .bg-success {
