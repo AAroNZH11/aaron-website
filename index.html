@@ -57,30 +57,32 @@
                             <a href="#page-top"></a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#about">About</a>
+                            <a href="#about" data-i18n="nav.about">About</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#Experiences">Experiences</a>
+                            <a href="#Experiences" data-i18n="nav.experiences">Experiences</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#Projects">Projects</a>
+                            <a href="#Projects" data-i18n="nav.projects">Projects</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#contact">Contact</a>
+                            <a href="#contact" data-i18n="nav.contact">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#" id="lang-toggle" data-i18n="lang.toggle" onclick="toggleLanguage(); return false;" style="padding: 3px 9px; border: 1px solid rgba(255,255,255,0.45); border-radius: 3px; margin-left: 6px; font-size: 0.85em; letter-spacing: 1px;">中</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <!-- Hero banner: save your hiking photo as assets/img/your-hero.jpg -->
         <header class="intro-img intro-dark-bg" style="background-image: url(assets/img/banner2.jpg)" data-stellar-background-ratio="0.5">
             <div class="overlay"></div>
             <div class="intro-body" data-scrollreveal="move 0">
                 <div class="container">
-                    <div class="intro-welcome" style="font-size: 38px;">Aaron Zhong</div>
-                    <div class="intro-welcome" style="font-size: 26px;">Data Science &amp; Biostatistics</div>
-                    <div class="intro-welcome" style="font-size: 17px; color: #4b2e83;">University of Washington, Seattle</div>
+                    <div class="intro-welcome" style="font-size: 38px;" data-i18n="hero.name">Aaron Zhong</div>
+                    <div class="intro-welcome" style="font-size: 26px;" data-i18n="hero.role">Data Science &amp; Biostatistics</div>
+                    <div class="intro-welcome" style="font-size: 17px; color: #4b2e83;" data-i18n="hero.org">University of Washington, Seattle</div>
                     <hr class="light">
                     <div class="page-scroll" data-scrollreveal="enter bottom after .6s">
                         <a href="#about" class="btn btn-scroll-light sink">
@@ -95,14 +97,13 @@
             <div class="container">
                 <div class="row" data-scrollreveal="enter left">
                     <div class="col-lg-4 col-lg-offset-1">
-                        <!-- Profile photo: save your headshot as assets/img/your-headshot.jpg -->
                         <img src="assets/img/linkedin.jpg" class="img-circle img-responsive img-centered dark-faded-border" alt="Aaron Zhong" style="max-width: 78%;">
                     </div>
                     <div class="col-lg-5 text-center" data-scrollreveal="enter right">
-                        <h2>About Me</h2>
+                        <h2 data-i18n="about.heading">About Me</h2>
                         <hr class="primary">
-                        <p>I am currently a graduate student in Biostatistics at the University of Washington. I earned my B.S. in Computer Science from Duke University and Duke Kunshan University. My academic interests lie at the intersection of data science and public health, with a focus on applying statistical methods to real-world health problems.</p>
-                        <p>I am currently serving as a teaching assistant for BIOST 310: Biostatistics for the Health Sciences, supervised by Prof. Robin Mejia, where I lead discussion sections and support students in understanding core statistical concepts.</p>
+                        <p data-i18n="about.bio1">I am currently a graduate student in Biostatistics at the University of Washington. I earned my B.S. in Computer Science from Duke University and Duke Kunshan University. My academic interests lie at the intersection of data science and public health, with a focus on applying statistical methods to real-world health problems.</p>
+                        <p data-i18n="about.bio2">I am currently serving as a teaching assistant for BIOST 310: Biostatistics for the Health Sciences, supervised by Prof. Robin Mejia, where I lead discussion sections and support students in understanding core statistical concepts.</p>
                         <ul class="list-inline" style="font-size: 2em; margin-top: 15px;">
                             <li>
                                 <a href="https://github.com/AAroNZH11" target="_blank" rel="noopener" title="GitHub" style="color: inherit;">
@@ -129,7 +130,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Experiences</h2>
+                        <h2 class="section-heading" data-i18n="exp.heading">Experiences</h2>
                         <hr class="light">
                     </div>
                 </div>
@@ -138,11 +139,11 @@
 
                         <div class="row" style="margin-bottom: 30px;">
                             <div class="col-sm-3">
-                                <p><strong>June 2025 – Aug 2025</strong><br>Shenzhen, China</p>
+                                <p><strong data-i18n="exp1.period">June 2025 &ndash; Aug 2025</strong><br><span data-i18n="exp1.location">Shenzhen, China</span></p>
                             </div>
                             <div class="col-sm-9">
-                                <h4>Data Scientist Intern &mdash; Haplox Biotechnology</h4>
-                                <ul>
+                                <h4 data-i18n-html="exp1.title">Data Scientist Intern &mdash; Haplox Biotechnology</h4>
+                                <ul data-i18n-html="exp1.bullets">
                                     <li>Architected an end-to-end genomic pipeline via SQL/Python for early lung cancer diagnostics, multiprocessing 1K+ samples and 100K+ features, reducing preprocessing time by 40%.</li>
                                     <li>Streamlined high-dimensional biological datasets from 100K+ down to ~300 prognostic features using variance thresholds and mutual information SelectKBest algorithms.</li>
                                     <li>Deployed a Random Forest diagnostic model with rigorous cross-validation via scikit-learn, achieving AUC of 0.98 to identify top genomic predictors from fragmented sequence data.</li>
@@ -153,11 +154,11 @@
 
                         <div class="row" style="margin-bottom: 30px;">
                             <div class="col-sm-3">
-                                <p><strong>Aug 2024 – Nov 2024</strong><br>Shanghai, China</p>
+                                <p><strong data-i18n="exp2.period">Aug 2024 &ndash; Nov 2024</strong><br><span data-i18n="exp2.location">Shanghai, China</span></p>
                             </div>
                             <div class="col-sm-9">
-                                <h4>Data Analyst Intern &mdash; Lilly Asia Ventures</h4>
-                                <ul>
+                                <h4 data-i18n-html="exp2.title">Data Analyst Intern &mdash; Lilly Asia Ventures</h4>
+                                <ul data-i18n-html="exp2.bullets">
                                     <li>Evaluated early-stage investment viability for medical device portfolios via EDA on 50+ variables, assessing funding history and valuation trends to dictate capital allocation strategies.</li>
                                     <li>Implemented logistic regression models using multi-dimensional company growth and market indicators to quantify product commercialization probability and mitigate financial risk.</li>
                                     <li>Designed Tableau visualizations to track competitive market share and long-term financial projections, streamlining scenario analysis for executive-level due diligence.</li>
@@ -167,11 +168,11 @@
 
                         <div class="row" style="margin-bottom: 30px;">
                             <div class="col-sm-3">
-                                <p><strong>Current</strong><br>Seattle, WA</p>
+                                <p><strong data-i18n="exp3.period">Current</strong><br><span data-i18n="exp3.location">Seattle, WA</span></p>
                             </div>
                             <div class="col-sm-9">
-                                <h4>Teaching Assistant &mdash; BIOST 310, University of Washington</h4>
-                                <ul>
+                                <h4 data-i18n-html="exp3.title">Teaching Assistant &mdash; BIOST 310, University of Washington</h4>
+                                <ul data-i18n-html="exp3.bullets">
                                     <li>Lead discussion sections for Biostatistics for the Health Sciences, supervised by Prof. Robin Mejia.</li>
                                     <li>Support students in understanding core statistical concepts including hypothesis testing, regression, and data interpretation.</li>
                                 </ul>
@@ -187,7 +188,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center" data-scrollreveal="move 0">
-                        <h2>Projects</h2>
+                        <h2 data-i18n="proj.heading">Projects</h2>
                         <hr class="primary">
                     </div>
                 </div>
@@ -195,19 +196,17 @@
                     <div class="col-sm-4 col-sm-offset-2 portfolio-item print">
                         <a href="#portfolio-modal-1" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
-                                <div class="caption-content">
-                                </div>
+                                <div class="caption-content"></div>
                             </div>
-                            <img src="assets/img/paper1.png" class="img-centered" alt="Modeling Healthcare Expenditure in Aging Populations">
+                            <img src="assets/img/paper1.png" class="img-centered" alt="Project 1">
                         </a>
                     </div>
                     <div class="col-sm-4 portfolio-item print">
                         <a href="#portfolio-modal-2" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
-                                <div class="caption-content">
-                                </div>
+                                <div class="caption-content"></div>
                             </div>
-                            <img src="assets/img/paper2.png" class="img-centered" alt="Large-Scale Network Visualization Using SG-t-SNE Graph Embedding">
+                            <img src="assets/img/paper2.png" class="img-centered" alt="Project 2">
                         </a>
                     </div>
                 </div>
@@ -218,8 +217,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
-                        <h2 class="script">Thank you for visiting!</h2>
-                        <p>Feel free to reach out if you'd like to connect or collaborate.</p>
+                        <h2 class="script" data-i18n="footer.heading">Thank you for visiting!</h2>
+                        <p data-i18n="footer.message">Feel free to reach out if you'd like to connect or collaborate.</p>
                         <p>aaronz@uw.edu &nbsp;|&nbsp; aaronzhong02@gmail.com</p>
                         <p class="small">&copy; 2025 Aaron Zhong</p>
                     </div>
@@ -229,33 +228,31 @@
 
     </div>
 
-    <!-- Project Modal 1: Modeling Healthcare Expenditure -->
+    <!-- Project Modal 1 -->
     <div id="portfolio-modal-1" class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl"></div>
-                </div>
+                <div class="lr"><div class="rl"></div></div>
             </div>
             <div class="container">
                 <div class="row first">
                     <div class="col-lg-12">
-                        <h2 class="page-header">Modeling Healthcare Expenditure in Aging Populations</h2>
+                        <h2 class="page-header" data-i18n="modal1.title">Modeling Healthcare Expenditure in Aging Populations</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-8">
                         <div id="project-details-carousel" class="owl-carousel owl-theme">
                             <div class="item">
-                                <img src="assets/img/paper1.png" alt="Modeling Healthcare Expenditure">
+                                <img src="assets/img/paper1.png" alt="Project 1">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-8">
-                        <p><em>Aug 2024 – Mar 2025</em></p>
-                        <ul>
+                        <p><em data-i18n="modal1.period">Aug 2024 &ndash; Mar 2025</em></p>
+                        <ul data-i18n-html="modal1.bullets">
                             <li>Structured rigorous datasets to model national healthcare expenditure trends in aging populations, cleaning 10K+ China Family Panel Studies (CFPS) observations using Stata and standardizing income, insurance coverage, and other socioeconomic variables.</li>
                             <li>Quantified the macroeconomic relationship between population aging and rising healthcare expenditures by applying multivariate regression frameworks, controlling for demographic and socioeconomic covariates to deliver data-driven policy insights.</li>
                         </ul>
@@ -265,29 +262,27 @@
         </div>
     </div>
 
-    <!-- Project Modal 2: Network Visualization -->
+    <!-- Project Modal 2 -->
     <div id="portfolio-modal-2" class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl"></div>
-                </div>
+                <div class="lr"><div class="rl"></div></div>
             </div>
             <div class="container">
                 <div class="row first">
                     <div class="col-lg-12">
-                        <h2 class="page-header">Large-Scale Network Visualization Using SG-t-SNE Graph Embedding</h2>
+                        <h2 class="page-header" data-i18n="modal2.title">Large-Scale Network Visualization Using SG-t-SNE Graph Embedding</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-8">
-                        <img src="assets/img/paper2.png" alt="Network Visualization">
+                        <img src="assets/img/paper2.png" alt="Project 2">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-8">
-                        <p><em>Jul 2023 – Jan 2024</em></p>
-                        <ul>
+                        <p><em data-i18n="modal2.period">Jul 2023 &ndash; Jan 2024</em></p>
+                        <ul data-i18n-html="modal2.bullets">
                             <li>Processed sparse graph datasets containing 50K+ nodes via Python NetworkX to prepare complex adjacency matrices for advanced embedding analysis and large-scale graph visualization.</li>
                             <li>Integrated SG-t-SNE graph embeddings using a Python-Julia interface (SGtSNEpi) and mapped massive networks into navigable 2D/3D spaces to empower structural visual analytics.</li>
                         </ul>
@@ -319,6 +314,9 @@
     <!-- Spectrum JavaScript Files -->
     <script src="assets/js/spectrum.nav.js"></script>
     <script src="assets/js/spectrum.js"></script>
+
+    <!-- Language toggle -->
+    <script src="assets/js/i18n.js"></script>
 
 </body>
 
