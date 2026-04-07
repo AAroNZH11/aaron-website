@@ -60,6 +60,26 @@ aside {
 .img-centered {
   margin: 0 auto;
 }
+.about-photo {
+  width: 100%;
+  max-width: 360px;
+  height: 520px;
+  object-fit: cover;
+  object-position: center 28%;
+  border: 6px solid #f4f5f7;
+}
+.about-copy {
+  text-align: left;
+}
+.about-links {
+  margin-top: 36px;
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  .about-copy {
+    text-align: center;
+  }
+}
 .nopadding {
   padding: 0;
 }
@@ -158,6 +178,15 @@ hr.dark {
 }
 hr.primary {
   border-top: 6px solid #afd0ba;
+}
+#about hr.primary,
+#Projects hr.primary {
+  border-top-color: #3e444d;
+}
+#about h2,
+#Experiences .section-heading,
+#Projects h2 {
+  margin-bottom: 42px;
 }
 hr.light {
   border-top: 6px solid #f4f5f7;
@@ -273,7 +302,7 @@ a.light-text:focus {
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
-  background-color: rgba(244, 245, 247, 0.5);
+  background-color: transparent;
 }
 .navbar-toggle {
   padding: 4px 6px;
@@ -326,7 +355,7 @@ a.light-text:focus {
     right: 0;
     bottom: 0;
     height: 3px;
-    background: #4b2e83;
+    background: #ffffff;
     content: '';
     opacity: 0;
     -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -365,7 +394,7 @@ a.light-text:focus {
   .navbar-dark .nav li.active a,
   .navbar-light .nav li.active a {
     background-color: transparent;
-    color: #afd0ba !important;
+    color: #ffffff !important;
   }
   .navbar-dark.top-nav-collapse,
   .navbar-light.top-nav-collapse {
@@ -387,7 +416,7 @@ a.light-text:focus {
     color: #f4f5f7;
   }
   .navbar-dark.top-nav-collapse .nav li a:after {
-    background: #afd0ba;
+    background: #ffffff;
   }
   .navbar-dark.top-nav-collapse .nav li a:hover,
   .navbar-dark.top-nav-collapse .nav li a:focus,
@@ -436,8 +465,8 @@ a.light-text:focus {
 .intro-slider-half .intro-welcome,
 .intro-video .intro-welcome {
   font-size: 20px;
-  margin: 0;
-  font-family: "Pacifico", "Helvetica Neue", sans-serif;
+  margin: 5;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 .intro-img .brand-heading,
@@ -471,7 +500,7 @@ a.light-text:focus {
   .intro-img-half .intro-welcome,
   .intro-slider-half .intro-welcome {
     font-size: 30px;
-    margin: 0 0 -10px;
+    margin: 0 0 8px;
   }
   .intro-img .brand-heading,
   .intro-slider .brand-heading,
@@ -1390,8 +1419,19 @@ a.light-text:focus {
   color: #3e444d !important;
 }
 .bg-primary {
-  background: #4b2e83 !important;
+  background: #5e3da2 !important;
   color: #f4f5f7 !important;
+}
+footer#contact,
+footer#contact h2,
+footer#contact p {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+footer#contact {
+  background: #3e444d !important;
+}
+footer#contact .contact-message {
+  margin-bottom: 8px;
 }
 .bg-success {
   background: #2ecc71 !important;
@@ -1418,6 +1458,53 @@ a.light-text:focus {
   position: relative;
   max-width: 400px;
   margin: 0 auto;
+}
+.portfolio-1 .portfolio-item .portfolio-link .project-card {
+  min-height: 300px;
+  padding: 24px 22px;
+  border: 2px solid #cfc4e8;
+  background: #f1ebfb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transition: all ease 0.3s;
+}
+.portfolio-1 .portfolio-item .portfolio-link .project-card h3 {
+  margin: 0;
+  color: #5e3da2;
+  font-size: 24px;
+  line-height: 1.35;
+}
+.portfolio-1 .portfolio-item .portfolio-link:hover .project-card,
+.portfolio-1 .portfolio-item .portfolio-link:focus .project-card {
+  border-color: #5e3da2;
+  box-shadow: 0 18px 36px rgba(94, 61, 162, 0.14);
+  transform: translateY(-4px);
+}
+.portfolio-1 .portfolio-item .portfolio-link .project-card.project-card-red {
+  border-color: #e5c5cb;
+  background: #faecee;
+}
+.portfolio-1 .portfolio-item .portfolio-link .project-card.project-card-red h3 {
+  color: #b55b6a;
+}
+.portfolio-1 .portfolio-item .portfolio-link:hover .project-card.project-card-red,
+.portfolio-1 .portfolio-item .portfolio-link:focus .project-card.project-card-red {
+  border-color: #b55b6a;
+  box-shadow: 0 18px 36px rgba(181, 91, 106, 0.16);
+}
+.portfolio-1 .portfolio-item .portfolio-link .project-card.project-card-blue {
+  border-color: #bfd4ea;
+  background: #eaf3fb;
+}
+.portfolio-1 .portfolio-item .portfolio-link .project-card.project-card-blue h3 {
+  color: #3f6fa3;
+}
+.portfolio-1 .portfolio-item .portfolio-link:hover .project-card.project-card-blue,
+.portfolio-1 .portfolio-item .portfolio-link:focus .project-card.project-card-blue {
+  border-color: #3f6fa3;
+  box-shadow: 0 18px 36px rgba(63, 111, 163, 0.16);
 }
 .portfolio-1 .portfolio-item .portfolio-link .caption {
   background: rgba(62, 68, 77, 0.9);
@@ -1500,6 +1587,13 @@ a.light-text:focus {
 }
 .portfolio-modal .page-header {
   margin-top: 0;
+}
+.portfolio-modal a {
+  color: #2563eb;
+}
+.portfolio-modal a:hover,
+.portfolio-modal a:focus {
+  color: #1d4ed8;
 }
 .portfolio-modal ul.project-details {
   margin-top: 15px;

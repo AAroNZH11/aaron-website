@@ -14,9 +14,9 @@
 
     <!-- Fonts -->
     <link href="assets/css/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 
     <!-- Retina Images Plugin -->
     <script src="assets/js/plugins/retina/retina.min.js"></script>
@@ -82,8 +82,7 @@
                 <div class="container">
                     <div class="intro-welcome" style="font-size: 38px;" data-i18n="hero.name">Aaron Zhong</div>
                     <div class="intro-welcome" style="font-size: 34px;" data-i18n="hero.role">Data Science &amp; Biostatistics</div>
-                    <div class="intro-welcome" style="font-size: 30px; color: #4b2e83;" data-i18n="hero.org">University of Washington, Seattle</div>
-                    <hr class="light">
+                    <div class="intro-welcome" style="font-size: 30px; color: #5e3da2;" data-i18n="hero.org">University of Washington, Seattle</div>
                     <div class="page-scroll" data-scrollreveal="enter bottom after .6s">
                         <a href="#about" class="btn btn-scroll-light sink">
                             <i class="fa fa-angle-double-down below bottom center" aria-hidden="true"></i>
@@ -97,14 +96,13 @@
             <div class="container">
                 <div class="row" data-scrollreveal="enter left">
                     <div class="col-lg-4 col-lg-offset-1">
-                        <img src="assets/img/linkedin.jpg" class="img-circle img-responsive img-centered dark-faded-border" alt="Aaron Zhong" style="max-width: 78%;">
+                        <img src="assets/img/banner.jpg" class="img-responsive img-centered about-photo" alt="Aaron Zhong">
                     </div>
-                    <div class="col-lg-5 text-center" data-scrollreveal="enter right">
+                    <div class="col-lg-6 about-copy" data-scrollreveal="enter right">
                         <h2 data-i18n="about.heading">About Me</h2>
-                        <hr class="primary">
                         <p data-i18n="about.bio1">I am currently a graduate student in Biostatistics at the University of Washington. I earned my B.S. in Computer Science from Duke University and Duke Kunshan University. My academic interests lie at the intersection of data science and public health, with a focus on applying statistical methods to real-world health problems.</p>
                         <p data-i18n="about.bio2">I am currently serving as a teaching assistant for BIOST 310: Biostatistics for the Health Sciences, supervised by Prof. Robin Mejia, where I lead discussion sections and support students in understanding core statistical concepts.</p>
-                        <ul class="list-inline" style="font-size: 2em; margin-top: 15px;">
+                        <ul class="list-inline about-links" style="font-size: 2em;">
                             <li>
                                 <a href="https://github.com/AAroNZH11" target="_blank" rel="noopener" title="GitHub" style="color: inherit;">
                                     <i class="fa fa-github"></i>
@@ -131,11 +129,23 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2 class="section-heading" data-i18n="exp.heading">Experiences</h2>
-                        <hr class="light">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-10 col-lg-offset-1">
+
+                        <div class="row" style="margin-bottom: 30px;">
+                            <div class="col-sm-3">
+                                <p><strong data-i18n="exp3.period">Current</strong><br><span data-i18n="exp3.location">Seattle, WA</span></p>
+                            </div>
+                            <div class="col-sm-9">
+                                <h4 data-i18n-html="exp3.title">Teaching Assistant &mdash; BIOST 310, University of Washington</h4>
+                                <ul data-i18n-html="exp3.bullets">
+                                    <li>Lead discussion sections for Biostatistics for the Health Sciences, supervised by Prof. Robin Mejia.</li>
+                                    <li>Support students in understanding core statistical concepts including hypothesis testing, regression, and data interpretation.</li>
+                                </ul>
+                            </div>
+                        </div>
 
                         <div class="row" style="margin-bottom: 30px;">
                             <div class="col-sm-3">
@@ -166,19 +176,6 @@
                             </div>
                         </div>
 
-                        <div class="row" style="margin-bottom: 30px;">
-                            <div class="col-sm-3">
-                                <p><strong data-i18n="exp3.period">Current</strong><br><span data-i18n="exp3.location">Seattle, WA</span></p>
-                            </div>
-                            <div class="col-sm-9">
-                                <h4 data-i18n-html="exp3.title">Teaching Assistant &mdash; BIOST 310, University of Washington</h4>
-                                <ul data-i18n-html="exp3.bullets">
-                                    <li>Lead discussion sections for Biostatistics for the Health Sciences, supervised by Prof. Robin Mejia.</li>
-                                    <li>Support students in understanding core statistical concepts including hypothesis testing, regression, and data interpretation.</li>
-                                </ul>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -189,24 +186,28 @@
                 <div class="row">
                     <div class="col-lg-12 text-center" data-scrollreveal="move 0">
                         <h2 data-i18n="proj.heading">Projects</h2>
-                        <hr class="primary">
                     </div>
                 </div>
                 <div class="row" data-scrollreveal="enter bottom">
-                    <div class="col-sm-4 col-sm-offset-2 portfolio-item print">
+                    <div class="col-sm-4 portfolio-item print">
                         <a href="#portfolio-modal-1" class="portfolio-link" data-toggle="modal">
-                            <div class="caption">
-                                <div class="caption-content"></div>
+                            <div class="project-card">
+                                <h3 data-i18n="proj1.cardTitle">E-commerce Recommendation and Purchase Prediction</h3>
                             </div>
-                            <img src="assets/img/paper1.png" class="img-centered" alt="Project 1">
                         </a>
                     </div>
                     <div class="col-sm-4 portfolio-item print">
                         <a href="#portfolio-modal-2" class="portfolio-link" data-toggle="modal">
-                            <div class="caption">
-                                <div class="caption-content"></div>
+                            <div class="project-card project-card-red">
+                                <h3 data-i18n="proj2.cardTitle">Building Personal Website with Claude Code</h3>
                             </div>
-                            <img src="assets/img/paper2.png" class="img-centered" alt="Project 2">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item print">
+                        <a href="#portfolio-modal-3" class="portfolio-link" data-toggle="modal">
+                            <div class="project-card project-card-blue">
+                                <h3 data-i18n="proj3.cardTitle">Complex Network Visualization and Dimensionality Reduction</h3>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -217,10 +218,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
-                        <h2 class="script" data-i18n="footer.heading">Thank you for visiting!</h2>
-                        <p data-i18n="footer.message">Feel free to reach out if you'd like to connect or collaborate.</p>
+                        <h2 class="heading" data-i18n="footer.heading">Thank you for visiting!</h2>
+                        <p class="contact-message" data-i18n="footer.message">Feel free to reach out if you'd like to connect or collaborate.</p>
                         <p>aaronz@uw.edu &nbsp;|&nbsp; aaronzhong02@gmail.com</p>
-                        <p class="small">&copy; 2025 Aaron Zhong</p>
+                        <p class="small">&copy; 2026 Aaron Zhong</p>
                     </div>
                 </div>
             </div>
@@ -237,24 +238,14 @@
             <div class="container">
                 <div class="row first">
                     <div class="col-lg-12">
-                        <h2 class="page-header" data-i18n="modal1.title">Modeling Healthcare Expenditure in Aging Populations</h2>
+                        <h2 class="page-header" data-i18n="modal1.title">E-commerce Recommendation and Purchase Prediction</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-8">
-                        <div id="project-details-carousel" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <img src="assets/img/paper1.png" alt="Project 1">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-8">
-                        <p><em data-i18n="modal1.period">Aug 2024 &ndash; Mar 2025</em></p>
+                        <p><em data-i18n="modal1.period">User Behavior Analytics and Recommendation Modeling</em></p>
                         <ul data-i18n-html="modal1.bullets">
-                            <li>Structured rigorous datasets to model national healthcare expenditure trends in aging populations, cleaning 10K+ China Family Panel Studies (CFPS) observations using Stata and standardizing income, insurance coverage, and other socioeconomic variables.</li>
-                            <li>Quantified the macroeconomic relationship between population aging and rising healthcare expenditures by applying multivariate regression frameworks, controlling for demographic and socioeconomic covariates to deliver data-driven policy insights.</li>
+                            <li>Built a recommendation and purchase-prediction workflow from large-scale e-commerce user behavior data.</li>
                         </ul>
                     </div>
                 </div>
@@ -271,20 +262,38 @@
             <div class="container">
                 <div class="row first">
                     <div class="col-lg-12">
-                        <h2 class="page-header" data-i18n="modal2.title">Large-Scale Network Visualization Using SG-t-SNE Graph Embedding</h2>
+                        <h2 class="page-header" data-i18n="modal2.title">Building Personal Website with Claude Code</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-8">
-                        <img src="assets/img/paper2.png" alt="Project 2">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-8">
-                        <p><em data-i18n="modal2.period">Jul 2023 &ndash; Jan 2024</em></p>
+                        <p><em data-i18n="modal2.period">AI-Assisted Frontend Development and Deployment</em></p>
                         <ul data-i18n-html="modal2.bullets">
-                            <li>Processed sparse graph datasets containing 50K+ nodes via Python NetworkX to prepare complex adjacency matrices for advanced embedding analysis and large-scale graph visualization.</li>
-                            <li>Integrated SG-t-SNE graph embeddings using a Python-Julia interface (SGtSNEpi) and mapped massive networks into navigable 2D/3D spaces to empower structural visual analytics.</li>
+                            <li>Built a personal website with Claude Code and structured the workflow into multiple subtasks.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Modal 3 -->
+    <div id="portfolio-modal-3" class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr"><div class="rl"></div></div>
+            </div>
+            <div class="container">
+                <div class="row first">
+                    <div class="col-lg-12">
+                        <h2 class="page-header" data-i18n="modal3.title">Complex Network Visualization and Dimensionality Reduction</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p><em data-i18n="modal3.period">Large-Scale Network Analysis and Visualization</em></p>
+                        <ul data-i18n-html="modal3.bullets">
+                            <li>Developed tools for large-scale network data visualization.</li>
                         </ul>
                     </div>
                 </div>
