@@ -4,7 +4,7 @@ Hi! This is the personal portfolio website for Aaron Zhong, a Graduate Student i
 
 ## Live Site
 
-[https://aaronznh11.github.io/aaron-website/](https://aaronznh11.github.io/aaron-website/)
+[https://aaronznh11.github.io/aaron-website/](https://aaronzh11.github.io/aaron-website/)
 
 ## Sections
 
