@@ -12,7 +12,7 @@ var translations = {
 
     'about.heading': 'About Me',
     'about.bio1': 'I am currently a graduate student in Biostatistics at the University of Washington. I earned my B.S. in Computer Science from Duke University and Duke Kunshan University. My academic interests lie at the intersection of data science and public health, with a focus on applying statistical methods to real-world health problems.',
-    'about.bio2': 'Outside of school, I enjoy playing and watching soccer, and have been a FC Barcelona fan for over 16 years. I also like traveling (visited eight countries), along with photography and FPS games.',
+    'about.bio2': 'Outside of school, I enjoy hiking and soccer, and have been a FC Barcelona fan for over 16 years. I also like traveling and exploring new cities.',
 
     'exp.heading': 'Experiences',
 
